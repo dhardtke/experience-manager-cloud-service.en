@@ -168,7 +168,7 @@ Apply processing profiles to folders using one of the following methods:
 >
 >Only one processing profile can be applied to a specific folder. To generate more renditions, add more rendition definitions to the existing processing profile.
 
-After a processing profile is applied to a folder, all the new assets uploaded (or updated) in this folder or any of it's sub-folders are processed using the additional processing profile configured. This processing is in addition to the standard, default profile. If you apply multiple profiles to a folder, the uploaded or updated assets are processed using each of these profiles.
+After a processing profile is applied to a folder, all the new assets uploaded (or updated) in this folder or any of its sub-folders are processed using the additional processing profile configured. This processing is in addition to the standard, default profile. If you apply multiple profiles to a folder, the uploaded or updated assets are processed using each of these profiles.
 
 >[!NOTE]
 >

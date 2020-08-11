@@ -7,7 +7,7 @@ description: Customize CIF Core Components
 
 [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) provides a standard set of Commerce components that can be used to accelerate a project that integrates Adobe Experience Manager (AEM) and Magento solutions. These components are production ready and can be [easily styled with CSS](style-cif-component.md). Many implementations will also want to extend these components to meet business specific requirements.
 
-In this tutorial we will review several different extension points provided by AEM CIF Core Components and AEM in general. We will do this by extending the capabilities of the [Product Teaser](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) component to include the ability to render a "New" banner. Content authors will have the ability to turn toggle this banner and determine how long to display the banner. The "age" of the product will be based on it's creation date in the Magento catalog. Once a product is a certain amount of days old, the "New" banner should automatically disappear.
+In this tutorial we will review several different extension points provided by AEM CIF Core Components and AEM in general. We will do this by extending the capabilities of the [Product Teaser](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) component to include the ability to render a "New" banner. Content authors will have the ability to turn toggle this banner and determine how long to display the banner. The "age" of the product will be based on its creation date in the Magento catalog. Once a product is a certain amount of days old, the "New" banner should automatically disappear.
 
  ![New Banner extended](/help/commerce-cloud/assets/customize-cif-components/new-banner-productteaser.png)
 
@@ -17,7 +17,7 @@ The following tools and technologies are required:
 
 * [Java 11](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html)
 * [Apache Maven](https://maven.apache.org/) (3.3.9 or newer)
-* [AEM Cloud SKD with CIF add-on](../develop.md)
+* [AEM Cloud SDK with CIF add-on](../develop.md)
 * Magento compatible with CIF Core Components
 
 It is recommended to review the following content before proceeding with this tutorial:
