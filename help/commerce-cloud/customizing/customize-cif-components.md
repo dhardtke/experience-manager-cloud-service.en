@@ -303,7 +303,7 @@ Sling Models are implemented as Java and can be found in the **core** module of 
         ...
         private AbstractProductRetriever productRetriever;
 
-        /* add this method to intialize the proudctRetriever */
+        /* add this method to initialize the productRetriever */
         @PostConstruct
         public void initModel() {
             productRetriever = productTeaser.getProductRetriever();
