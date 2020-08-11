@@ -38,7 +38,7 @@ We recommend setting up TTL-based cache invalidation for pages cached on the Dis
 
 ## 8. Why are you not using We.Retail?
 
-The Venia theme (developed by Magento) is used which is mobile first and aligned with Magento’s PWA. The Venia theme represents the latest in-terms of CSS styling and AEM core components.
+The Venia theme (developed by Magento) is used which is mobile first and aligned with Magento’s PWA. The Venia theme represents the latest in terms of CSS styling and AEM core components.
 
 ## 9. When you update product data in Magento, is that a real-time push to AEM? Or is it a batch process?
 
@@ -52,17 +52,17 @@ A product search reference implementation is provided but no unified search with
 
 CIF provides Search bar and Search Result components. The Search bar component sends a GraphQL request with the search term to Magento. Magento then returns a product list that includes product name, price, SLUG, etc. The Search Result component then displays the search results in a gallery view on a search result page created in AEM. The Search supports basic full-text search. We use the SLUG/url key to build a reference to the PDP.
 
-## 11. How can product data be used in MSM or translations?
+## 12. How can product data be used in MSM or translations?
 
 Product data is usually already translated in PIM or in Magento. The AEM – Magento Integration supports the connection to multiple Magento stores & store views. In an MSM setup typically one AEM site is linked to one Magento store view.
 
 ## 13. How does CIF work with other commerce platforms?
 
-Integration with third party solutions such as other commerce solutions (non-Magento) is done via the I/O Runtime platform.  We have built a [reference implementation](https://github.com/adobe/commerce-cif-graphql-integration-reference) to demonstrate how this is done. This enables the reuse of the [AEM CIF Cloud Connector](https://github.com/adobe/commerce-cif-connector) and the [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) by exposing the Magento GraphQL API on top of any thirdd-party commerce platform. To offer maximum flexibility and scalability, this integration layer is deployed on the serverless [Adobe I/O Runtime platform](https://www.adobe.io/apis/experienceplatform/runtime.html).
+Integration with third party solutions such as other commerce solutions (non-Magento) is done via the I/O Runtime platform.  We have built a [reference implementation](https://github.com/adobe/commerce-cif-graphql-integration-reference) to demonstrate how this is done. This enables the reuse of the [AEM CIF Cloud Connector](https://github.com/adobe/commerce-cif-connector) and the [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) by exposing the Magento GraphQL API on top of any third-party commerce platform. To offer maximum flexibility and scalability, this integration layer is deployed on the serverless [Adobe I/O Runtime platform](https://www.adobe.io/apis/experienceplatform/runtime.html).
 
 ## 14. Is there a way to enhance the product data with commercial text? Where do you do this? In AEM or in Magento?
 
-There are multiple ways to achieve this and it will depend on the use case. One way would be to work with custom attributes. Allow AEM authors to mutate these fields in AEM’s product editor and synchronize the data back to the PIM. Another option would be leveraging AEM Experience Fragments which gets injected into the product pages.
+There are multiple ways to achieve this and it will depend on the use case. One way would be to work with custom attributes. Allow AEM authors to mutate these fields in AEM’s product editor and synchronize the data back to the PIM. Another option would be leveraging AEM Experience Fragments which get injected into the product pages.
 
 ## 15. Does the integration between AEM-Magento change when Adobe I/O Runtime platform is used?
 
@@ -70,7 +70,7 @@ Customers who want to extend commerce services can use the same integration and 
 
 ## 16. Since AEM creates product and catalog pages dynamically based on a generic template in AEM, what would I see if I were to open CRXDE Lite and check under content? Would I see an entire product tree based on the products in Magento? If not, how would an author enhance those pages?
 
-There are no JCR catalog or product pages anymore. See question 12.
+There are no JCR catalog or product pages anymore. See question 9.
 
 ## 17. Will SPA store front work with AEM SPA editor?
 
@@ -82,11 +82,8 @@ PIM data gets exposed to AEM and clients via GraphQL requests. Our recommendatio
 
 ## 19. How can we ensure PCI compliance when using AEM for the entire presentation layer?
 
-When using AEM on AMS and Magento cloud deployment, it is mandatory to use abstracted payment methods. This puts the browser client in direct communication with the payment gateway provider so that neither Adobe or Magento clouds hold or pass cardholder data. This approach provides coverage for PCI compliance for the tech stacks and data centers. However, there are additional things to consider to be fully PCI compliant such as how employees interact with the system and data. For more information about Magento PCI compliance, please refer to https://magento.com/pci-compliance
+When using AEM on AMS and Magento cloud deployment, it is mandatory to use abstracted payment methods. This puts the browser client in direct communication with the payment gateway provider so that neither Adobe or Magento clouds hold or pass cardholder data. This approach provides coverage for PCI compliance for the tech stacks and data centers. However, there are additional things to consider to be fully PCI compliant such as how employees interact with the system and data. For more information about Magento PCI compliance, please refer to [PCI Compliance Requirements](https://magento.com/pci-compliance).
 
 ## 20. How can I request for an I/O Runtime trial license?
 
 You can request for a trial license to use I/O Runtime [here](https://github.com/AdobeDocs/adobeio-runtime/blob/master/overview/request_a_trial.md).
-
-
-
