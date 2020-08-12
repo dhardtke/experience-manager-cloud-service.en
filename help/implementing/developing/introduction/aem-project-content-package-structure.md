@@ -75,10 +75,10 @@ The recommended application deployment structure is as follows:
         + Groups
         + ACLs (permissions)
             + Any `rep:policy` for any path (mutable or immutable)
-+ The `ui.content` package, or Content Package, contains all content and configuration. The Content Package, contains everything not in the `ui.apps` package, or in other words, anything not in `/apps` or `/oak:index`. Common elements of the `ui.content` package include, but are not limited to:
++ The `ui.content` package, or Content Package, contains all content and configuration. The Content Package contains everything not in the `ui.apps` package, or in other words, anything not in `/apps` or `/oak:index`. Common elements of the `ui.content` package include, but are not limited to:
   + Context-aware configurations
     + `/conf`
-  + Required, complex content structures (ie. Content build-out that is builds on and extends past Baseline content structures defined in Repo Init.
+  + Required, complex content structures (ie. Content build-out that builds on and extends past Baseline content structures defined in Repo Init.
     + `/content`, `/content/dam`, etc.
   + Governed tagging taxonomies
     + `/content/cq:tags`
@@ -115,7 +115,7 @@ For more information see [Apache Jackrabbit FileVault - Package Maven Plugin doc
 
 ## Marking Packages for Deployment by Adobe Cloud Manager {#marking-packages-for-deployment-by-adoube-cloud-manager}
 
-By default, Adobe Cloud Manager harvests all packages produced by the Maven build, however since the container (`all`) package is the singular deployment artifact that contains all code and content packages, we must ensure **only** the  container (`all`) package is deployed. To ensure this, other Packages the Maven build generates must be marked with the FileVault Content Package Maven Plug-In configuration of `<properties><cloudManagerTarget>none</cloudManageTarget></properties>`.
+By default, Adobe Cloud Manager harvests all packages produced by the Maven build, however since the container (`all`) package is the singular deployment artifact that contains all code and content packages, we must ensure **only** the container (`all`) package is deployed. To ensure this, other Packages the Maven build generates must be marked with the FileVault Content Package Maven Plug-In configuration of `<properties><cloudManagerTarget>none</cloudManageTarget></properties>`.
 
 >[!TIP]
 >
